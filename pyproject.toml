@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=45", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "htmldown"
+version = "0.1.0"
+description = "Fetch HTML from URL and convert to readable Markdown"
+requires-python = ">=3.9"
+dependencies = [
+    "html2text",
+    "beautifulsoup4",
+    "readability-lxml",
+    "chardet",
+]
+
+[project.scripts]
+htmldown = "htmldown.__main__:main"
+
+[project.urls]
+Homepage = "https://github.com/wakodiwe/htmldown"
